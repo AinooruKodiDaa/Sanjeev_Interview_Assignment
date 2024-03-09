@@ -1,44 +1,128 @@
-import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Dashboard, Place, TrendingUp } from "@mui/icons-material";
 import "./App.css";
-import { Box, Toolbar, Typography } from "@mui/material";
-import { drawerWidth } from "./consts";
+import DashboardPage from "./pages/DashboardPage";
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Toolbar,
+} from "@mui/material";
+import { useState } from "react";
+import Sidebar from "./ui/Sidebar";
+import Navbar from "./ui/Navbar";
+import ReportPage from "./pages/ReportPage";
 
 function App() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleDrawerClose = () => {
+    setIsClosing(true);
+    setMobileOpen(false);
+  };
+
+  const handleDrawerTransitionEnd = () => {
+    setIsClosing(false);
+  };
+
+  const handleDrawerToggle = () => {
+    if (!isClosing) {
+      setMobileOpen(!mobileOpen);
+    }
+  };
+
+  const navItems = [
+    {
+      id: 1,
+      title: "Dashboard",
+      icon: <Dashboard />,
+      linkTo: "/",
+      component: DashboardPage,
+    },
+    {
+      id: 2,
+      title: "Track on map",
+      icon: <Place />,
+      linkTo: "/map",
+      component: () => (
+        <Box sx={{ background: "green" }}>
+          <Toolbar />
+          <h1>Map page</h1>
+        </Box>
+      ),
+    },
+    {
+      id: 3,
+      title: "Report",
+      icon: <TrendingUp />,
+      linkTo: "/report",
+      component: ReportPage,
+    },
+  ];
+
+  const drawerListItems = (
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <Toolbar>
+        <img
+          width={125}
+          height={50}
+          src="/images/InfoTrack.svg"
+          alt="InfoTrack Logo"
+        />
+      </Toolbar>
+
+      <List>
+        {navItems.map((item, index) => (
+          <ListItem key={item.id} sx={{ padding: "0.5rem" }}>
+            <ListItemButton
+              sx={{
+                "&:hover": {
+                  background: "#faeff5",
+                  color: "rgba(100,50,50,1)",
+                },
+                borderRadius: "8px",
+              }}
+              component="a"
+              href={item.linkTo}
+            >
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText primary={item.title} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </div>
+  );
+
   return (
-    <Box
-    component="main"
-    sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
-  >
-    <Toolbar />
-    <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-          Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-          nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-          leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-          feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-          consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-          sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-          neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-          tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-          sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-          tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
-          gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
-          et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
-          tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-          posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
-    </Box>
+    <Router>
+      <Box sx={{ display: "flex" }}>
+        <Navbar handleDrawerToggle={handleDrawerToggle} />
+
+        <Sidebar
+          mobileOpen={mobileOpen}
+          handleDrawerTransitionEnd={handleDrawerTransitionEnd}
+          handleDrawerClose={handleDrawerClose}
+          drawerListItems={drawerListItems}
+        />
+
+        <Routes>
+          {navItems.map((item, index) => (
+            <Route
+              key={item.id}
+              path={item.linkTo}
+              element={<item.component />}
+            />
+          ))}
+        </Routes>
+      </Box>
+    </Router>
   );
 }
 

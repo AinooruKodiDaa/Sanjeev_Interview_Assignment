@@ -3,20 +3,25 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Sidebar from "./ui/Sidebar/Sidebar";
-import Navbar from "./ui/Navbar/Navbar";
-import ResponsiveDrawer from "./components/ResponsiveDrawer";
-
+import Sidebar from "./ui/Sidebar";
+import Navbar from "./ui/Navbar";
+import { ErrorBoundary } from "react-error-boundary";
+import Fallback from "./ui/Fallback";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "./muiTheme";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    
-    {/* <Sidebar/>
-    <App /> */}
-    <ResponsiveDrawer/>
+    <ThemeProvider theme={theme}>
+      <ErrorBoundary FallbackComponent={Fallback}>
+      <CssBaseline />
+        <App />
+      </ErrorBoundary>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

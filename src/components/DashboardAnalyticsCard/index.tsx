@@ -5,14 +5,21 @@ import {
   SignalWifiOff,
   SwapHoriz,
 } from "@mui/icons-material";
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography,  } from "@mui/material";
+import {useTheme} from "@mui/material/styles";
+
+import { Link } from "react-router-dom";
+
 
 const DashboardAnalyticsCard = () => {
+
+  const theme = useTheme();
+
   const analyticsItems = [
     {
-      title: "Title",
-      count: "200",
-      percentage: "60%",
+      title: "Moving",
+      count: "563",
+      percentage: "50%",
       icon: (
         <SwapHoriz
           color="inherit"
@@ -25,9 +32,9 @@ const DashboardAnalyticsCard = () => {
     },
 
     {
-      title: "Title",
-      count: "200",
-      percentage: "60%",
+      title: "Stopped",
+      count: "114",
+      percentage: "40%",
       icon: (
         <Cancel
           color="inherit"
@@ -39,9 +46,9 @@ const DashboardAnalyticsCard = () => {
       background: "#D51524",
     },
     {
-      title: "Title",
-      count: "200",
-      percentage: "60%",
+      title: "Idle",
+      count: "345",
+      percentage: "67%",
       icon: (
         <Key
           color="inherit"
@@ -53,9 +60,9 @@ const DashboardAnalyticsCard = () => {
       background: "#f9882a",
     },
     {
-      title: "Title",
-      count: "200",
-      percentage: "60%",
+      title: "Inactive",
+      count: "124",
+      percentage: "28%",
       icon: (
         <SignalWifiOff
           color="inherit"
@@ -67,9 +74,9 @@ const DashboardAnalyticsCard = () => {
       background: "#929292",
     },
     {
-      title: "Title",
-      count: "200",
-      percentage: "60%",
+      title: "Out of service",
+      count: "264",
+      percentage: "45%",
       icon: (
         <MeetingRoom
           color="inherit"
@@ -90,15 +97,32 @@ const DashboardAnalyticsCard = () => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-between",
+        alignItems:"center",
         "& > :not(style)": {
           borderRadius: "20px",
-          width: 220,
+          width: "100%", // Default width for smaller screens
           height: 120,
+          [theme.breakpoints.up("sm")]: {
+            width: 230, // Set width for screens larger than or equal to "sm" breakpoint
+          },
+          "@media (max-width: 600px)": {
+            width: 400, // Adjust width for screens smaller than or equal to 600px
+          
+          },
         },
       }}
     >
       {analyticsItems.map((item, index) => (
-        <Paper key={index} elevation={6} sx={{ position: "relative" }}>
+        <Paper
+          key={index}
+          elevation={6}
+          sx={{
+            position: "relative",
+            display: "grid",
+            padding: "0.75rem",
+            gridTemplateColumns: "1fr 1fr",
+          }}
+        >
           <Box
             component="div"
             sx={{
@@ -116,38 +140,31 @@ const DashboardAnalyticsCard = () => {
           >
             {item.icon}
           </Box>
+
           <Box
-            component="div"
             sx={{
-              position: "absolute",
-              left: "15%",
-              top: "35%",
+              display: "grid",
+              alignContent: "end",
               textAlign: "center",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "8px",
-              color: "#931152",
             }}
           >
-            <Typography paragraph>{item.percentage}</Typography>
+
+            <Typography variant="h6" sx={{ color: item.background }}>{item.percentage}</Typography>
+            <Typography component={Link} to="/about" fontSize={12} paragraph>View Details</Typography>
           </Box>
 
           <Box
-            component="div"
             sx={{
-              position: "absolute",
-              left: "10%",
-              bottom: "0%",
+              display: "grid",
+              alignContent: "space-between",
               textAlign: "center",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "8px",
-              color: "#004e7b",
             }}
           >
-            <Typography paragraph>View Details</Typography>
+            <Typography paragraph sx={{ color: item.background }}>
+              {item.title}
+            </Typography>
+            <Typography variant="h6">{item.count}</Typography>
+            <Typography component={Link} to="/about" fontSize={12} paragraph>View on map</Typography>
           </Box>
         </Paper>
       ))}

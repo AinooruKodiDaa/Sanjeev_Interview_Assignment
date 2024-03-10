@@ -104,14 +104,12 @@ function App() {
     <Router>
       <Box sx={{ display: "flex" }}>
         <Navbar handleDrawerToggle={handleDrawerToggle} />
-
         <Sidebar
           mobileOpen={mobileOpen}
           handleDrawerTransitionEnd={handleDrawerTransitionEnd}
           handleDrawerClose={handleDrawerClose}
           drawerListItems={drawerListItems}
         />
-
         <Routes>
           {navItems.map((item, index) => (
             <Route

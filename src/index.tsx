@@ -9,17 +9,25 @@ import { ErrorBoundary } from "react-error-boundary";
 import Fallback from "./ui/Fallback";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./muiTheme";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
+const queryClient = new QueryClient(); 
+
+
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <ErrorBoundary FallbackComponent={Fallback}>
-      <CssBaseline />
+        <QueryClientProvider client={queryClient}>
+        <CssBaseline />
         <App />
+
+        </QueryClientProvider>
+      
       </ErrorBoundary>
     </ThemeProvider>
   </React.StrictMode>

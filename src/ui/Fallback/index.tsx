@@ -1,4 +1,9 @@
-import { Box, Button } from "@mui/material";
+import { Box} from "@mui/material";
+import { Button } from "../Button";
+
+
+
+
 
 const Fallback = ({ error, resetErrorBoundary }: any) => {
   // Call resetErrorBoundary() to reset the error boundary and retry the render.

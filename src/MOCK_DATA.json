@@ -16,14 +16,14 @@
     {
         "id": 3,
         "name": "Random Vehicle 3",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 48.8566, "lng": 2.3522},
         "address": "Eiffel Tower, Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France"
     },
     {
         "id": 4,
         "name": "Random Vehicle 4",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 48.2118, "lng": 16.3634},
         "address": "Schönbrunn Palace, Schönbrunner Schlossstraße 47, 1130 Wien, Austria"
     },
@@ -58,7 +58,7 @@
     {
         "id": 9,
         "name": "Random Vehicle 9",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 41.3851, "lng": 2.1734},
         "address": "Sagrada Familia, Carrer de Mallorca, 401, 08013 Barcelona, Spain"
     },
@@ -93,7 +93,7 @@
     {
         "id": 14,
         "name": "Random Vehicle 14",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 52.5200, "lng": 13.4050},
         "address": "Brandenburg Gate, Pariser Platz, 10117 Berlin, Germany"
     },
@@ -128,7 +128,7 @@
     {
         "id": 19,
         "name": "Random Vehicle 19",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 55.6761, "lng": 12.5683},
         "address": "Nyhavn, Copenhagen, Denmark"
     },
@@ -163,7 +163,7 @@
     {
         "id": 24,
         "name": "Random Vehicle 24",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 35.6894, "lng": 139.6921},
         "address": "Zōjō-ji, 4 Chome-7-35 Shibakoen, Minato City, Tokyo 105-0011, Japan"
     },
@@ -198,7 +198,7 @@
     {
         "id": 29,
         "name": "Random Vehicle 29",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 34.6937, "lng": 135.5023},
         "address": "Osaka Castle, 1-1 Osakajo, Chuo Ward, Osaka, 540-0002, Japan"
     },
@@ -233,7 +233,7 @@
     {
         "id": 34,
         "name": "Random Vehicle 34",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 35.6895, "lng": 139.6917},
         "address": "Tokyo Tower, 4 Chome-2-8 Shibakoen, Minato City, Tokyo 105-0011, Japan"
     },
@@ -268,7 +268,7 @@
     {
         "id": 39,
         "name": "Random Vehicle 39",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 6.9271, "lng": 79.8612},
         "address": "Sigiriya, Sigiriya 21120, Sri Lanka"
     },
@@ -303,7 +303,7 @@
     {
         "id": 44,
         "name": "Random Vehicle 44",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 3.1390, "lng": 101.6869},
         "address": "Petronas Twin Towers, Kuala Lumpur City Centre, Kuala Lumpur, Malaysia"
     },
@@ -338,7 +338,7 @@
     {
         "id": 49,
         "name": "Random Vehicle 49",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 23.8103, "lng": 90.4125},
         "address": "Lalbagh Fort, Lalbagh Rd, Lalbagh, Dhaka, Bangladesh"
     },
@@ -373,7 +373,7 @@
     {
         "id": 54,
         "name": "Random Vehicle 54",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 30.7333, "lng": 130.7333},
         "address": "Yakushima Island, Kagoshima Prefecture, Japan"
     },
@@ -408,7 +408,7 @@
     {
         "id": 59,
         "name": "Random Vehicle 59",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 32.6891, "lng": 130.7209},
         "address": "Udo Shrine, 3232 Miyaura, Nichinan, Miyazaki 889-2162, Japan"
     },
@@ -436,14 +436,14 @@
     {
         "id": 63,
         "name": "Random Vehicle 63",
-        "status": "Stopped",
+        "status": "Moving",
         "position": {"lat": 32.0957, "lng": 131.4236},
         "address": "Shiroyama Observatory, Kagoshima, Kagoshima Prefecture 892-0843, Japan"
     },
     {
         "id": 64,
         "name": "Random Vehicle 64",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 31.6849, "lng": 131.0602},
         "address": "Yoronjima, Kagoshima Prefecture, Japan"
     },
@@ -464,7 +464,7 @@
     {
         "id": 67,
         "name": "Random Vehicle 67",
-        "status": "Stopped",
+        "status": "Moving",
         "position": {"lat": 30.3698, "lng": 130.8591},
         "address": "Yakushima Forest Railway, Yakushima, Kumage District, Kagoshima 891-4205, Japan"
     },
@@ -478,7 +478,7 @@
     {
         "id": 69,
         "name": "Random Vehicle 69",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 31.6403, "lng": 130.6161},
         "address": "Nagashima Museum, 5823-3 Nagashimacho, Isa, Kagoshima 891-0404, Japan"
     },
@@ -506,7 +506,7 @@
     {
         "id": 73,
         "name": "Random Vehicle 73",
-        "status": "Stopped",
+        "status": "Moving",
         "position": {"lat": 33.2393, "lng": 131.6043},
         "address": "Oita City Hall, 3-1 Shukumachi, Oita 870-8601, Japan"
     },
@@ -541,7 +541,7 @@
     {
         "id": 78,
         "name": "Random Vehicle 78",
-        "status": "Stopped",
+        "status": "Moving",
         "position": {"lat": 13.0827, "lng": 80.2707},
         "address": "Marina Beach, Chennai, Tamil Nadu, India"
     },
@@ -555,7 +555,7 @@
     {
         "id": 80,
         "name": "Random Vehicle 80",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.9716, "lng": 77.5946},
         "address": "Bangalore Palace, Vasanth Nagar, Bengaluru, Karnataka, India"
     },
@@ -576,7 +576,7 @@
     {
         "id": 83,
         "name": "Random Vehicle 83",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 30.7333, "lng": 76.7794},
         "address": "Rock Garden of Chandigarh, Sector 1, Chandigarh, India"
     },
@@ -590,7 +590,7 @@
     {
         "id": 85,
         "name": "Random Vehicle 85",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 22.5726, "lng": 88.3639},
         "address": "Victoria Memorial, 1, Queens Way, Maidan, Kolkata, West Bengal, India"
     },
@@ -611,7 +611,7 @@
     {
         "id": 88,
         "name": "Random Vehicle 88",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 8.5241, "lng": 76.9366},
         "address": "Napier Museum, LMS Vellayambalam Road, Near Ayurveda College, Thiruvananthapuram, Kerala, India"
     },
@@ -625,7 +625,7 @@
     {
         "id": 90,
         "name": "Random Vehicle 90",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 19.9975, "lng": 73.7898},
         "address": "Sula Vineyards, Nashik, Maharashtra, India"
     },
@@ -646,7 +646,7 @@
     {
         "id": 93,
         "name": "Random Vehicle 93",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 13.0827, "lng": 80.2707},
         "address": "Marina Beach, Chennai, Tamil Nadu, India"
     },
@@ -660,7 +660,7 @@
     {
         "id": 95,
         "name": "Random Vehicle 95",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 17.385, "lng": 78.4867},
         "address": "Birla Mandir, Hill Fort Road, Hyderabad, Telangana, India"
     },
@@ -681,7 +681,7 @@
     {
         "id": 98,
         "name": "Random Vehicle 98",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 28.6139, "lng": 77.209},
         "address": "Connaught Place, New Delhi, Delhi, India"
     },
@@ -695,7 +695,7 @@
     {
         "id": 100,
         "name": "Random Vehicle 100",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 22.5726, "lng": 88.3639},
         "address": "Victoria Memorial, 1, Queens Way, Maidan, Kolkata, West Bengal, India"
     },
@@ -716,7 +716,7 @@
     {
         "id": 103,
         "name": "Random Vehicle 103",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 30.7333, "lng": 76.7794},
         "address": "Rock Garden of Chandigarh, Sector 1, Chandigarh, India"
     },
@@ -730,7 +730,7 @@
     {
         "id": 105,
         "name": "Random Vehicle 105",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.9716, "lng": 77.5946},
         "address": "Bangalore Palace, Vasanth Nagar, Bengaluru, Karnataka, India"
     },
@@ -751,7 +751,7 @@
     {
         "id": 108,
         "name": "Random Vehicle 108",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 30.7333, "lng": 76.7794},
         "address": "Rock Garden of Chandigarh, Sector 1, Chandigarh, India"
     },
@@ -765,7 +765,7 @@
     {
         "id": 110,
         "name": "Random Vehicle 110",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 22.5726, "lng": 88.3639},
         "address": "Victoria Memorial, 1, Queens Way, Maidan, Kolkata, West Bengal, India"
     },
@@ -786,7 +786,7 @@
     {
         "id": 113,
         "name": "Random Vehicle 113",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 30.7333, "lng": 76.7794},
         "address": "Rock Garden of Chandigarh, Sector 1, Chandigarh, India"
     },
@@ -800,7 +800,7 @@
     {
         "id": 115,
         "name": "Random Vehicle 115",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 22.5726, "lng": 88.3639},
         "address": "Victoria Memorial, 1, Queens Way, Maidan, Kolkata, West Bengal, India"
     },
@@ -821,7 +821,7 @@
     {
         "id": 118,
         "name": "Random Vehicle 118",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 12.8471, "lng": 77.6981},
         "address": "Doddakannelli, Bengaluru, Karnataka, India"
     },
@@ -835,7 +835,7 @@
     {
         "id": 120,
         "name": "Random Vehicle 120",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.8579, "lng": 77.6937},
         "address": "Carmelaram, Bengaluru, Karnataka, India"
     },
@@ -856,7 +856,7 @@
     {
         "id": 123,
         "name": "Random Vehicle 123",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 12.8414, "lng": 77.6765},
         "address": "Bellandur Gate, Bengaluru, Karnataka, India"
     },
@@ -870,7 +870,7 @@
     {
         "id": 125,
         "name": "Random Vehicle 125",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.8471, "lng": 77.693},
         "address": "Kaikondrahalli Lake, Bengaluru, Karnataka, India"
     },
@@ -905,7 +905,7 @@
     {
         "id": 130,
         "name": "Random Vehicle 130",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.8432, "lng": 77.6694},
         "address": "Sarjapur Police Station, Bengaluru, Karnataka, India"
     },
@@ -940,7 +940,7 @@
     {
         "id": 135,
         "name": "Random Vehicle 135",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.8499, "lng": 77.6786},
         "address": "Kaikondrahalli Lake, Bengaluru, Karnataka, India"
     },
@@ -975,7 +975,7 @@
     {
         "id": 140,
         "name": "Random Vehicle 140",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.8465, "lng": 77.6969},
         "address": "Kada Agrahara, Bengaluru, Karnataka, India"
     },
@@ -1010,7 +1010,7 @@
     {
         "id": 145,
         "name": "Random Vehicle 145",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.8435, "lng": 77.6881},
         "address": "Atibelle, Bengaluru, Karnataka, India"
     },{
@@ -1044,7 +1044,7 @@
     {
         "id": 150,
         "name": "Random Vehicle 150",
-        "status": "Out of service",
+        "status": "Moving",
         "position": {"lat": 12.9618, "lng": 77.6388},
         "address": "Sarjapur Road, Bengaluru, Karnataka, India"
     },
@@ -1072,7 +1072,7 @@
     {
         "id": 154,
         "name": "Random Vehicle 154",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 12.9263, "lng": 77.6429},
         "address": "Carmelaram, Bengaluru, Karnataka, India"
     },
@@ -1107,7 +1107,7 @@
     {
         "id": 159,
         "name": "Random Vehicle 159",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 12.9371, "lng": 77.6643},
         "address": "Kaikondrahalli Lake, Bengaluru, Karnataka, India"
     },
@@ -1142,7 +1142,7 @@
     {
         "id": 164,
         "name": "Random Vehicle 164",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 12.9443, "lng": 77.6885},
         "address": "Carmelaram Railway Station, Bengaluru, Karnataka, India"
     },
@@ -1176,7 +1176,7 @@
     {
         "id": 169,
         "name": "Random Vehicle 169",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 12.8571, "lng": 77.7812},
         "address": "Hosa Road, Bengaluru, Karnataka, India"
     },
@@ -1204,14 +1204,14 @@
     {
         "id": 173,
         "name": "Random Vehicle 173",
-        "status": "Stopped",
+        "status": "Idle",
         "position": {"lat": 12.8609, "lng": 77.7837},
         "address": "Near Wipro Gate, Electronic City Phase I, Bengaluru, Karnataka, India"
     },
     {
         "id": 174,
         "name": "Random Vehicle 174",
-        "status": "Inactive",
+        "status": "Moving",
         "position": {"lat": 12.8599, "lng": 77.7824},
         "address": "Doddathoguru, Bengaluru, Karnataka, India"
     },
@@ -1221,5 +1221,75 @@
         "status": "Out of service",
         "position": {"lat": 12.8578, "lng": 77.7798},
         "address": "Hulimangala, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 176,
+        "name": "Random Vehicle 176",
+        "status": "Moving",
+        "position": {"lat": 13.0078, "lng": 77.5692},
+        "address": "15th Cross, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 177,
+        "name": "Random Vehicle 177",
+        "status": "Idle",
+        "position": {"lat": 13.0085, "lng": 77.5742},
+        "address": "18th Cross, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 178,
+        "name": "Random Vehicle 178",
+        "status": "Stopped",
+        "position": {"lat": 13.0071, "lng": 77.5698},
+        "address": "Margosa Road, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 179,
+        "name": "Random Vehicle 179",
+        "status": "Inactive",
+        "position": {"lat": 13.0112, "lng": 77.5746},
+        "address": "11th Cross, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 180,
+        "name": "Random Vehicle 180",
+        "status": "Out of service",
+        "position": {"lat": 13.0119, "lng": 77.5721},
+        "address": "9th Main Road, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 181,
+        "name": "Random Vehicle 181",
+        "status": "Moving",
+        "position": {"lat": 13.0104, "lng": 77.5761},
+        "address": "8th Main Road, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 182,
+        "name": "Random Vehicle 182",
+        "status": "Idle",
+        "position": {"lat": 13.0083, "lng": 77.5713},
+        "address": "13th Cross, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 183,
+        "name": "Random Vehicle 183",
+        "status": "Stopped",
+        "position": {"lat": 13.0109, "lng": 77.5703},
+        "address": "Sampige Road, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 184,
+        "name": "Random Vehicle 184",
+        "status": "Inactive",
+        "position": {"lat": 13.0096, "lng": 77.5767},
+        "address": "16th Cross, Malleshwaram, Bengaluru, Karnataka, India"
+    },
+    {
+        "id": 185,
+        "name": "Random Vehicle 185",
+        "status": "Out of service",
+        "position": {"lat": 13.0123, "lng": 77.5718},
+        "address": "11th Main Road, Malleshwaram, Bengaluru, Karnataka, India"
     }
 ]

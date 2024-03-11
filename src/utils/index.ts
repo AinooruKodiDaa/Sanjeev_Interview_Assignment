@@ -31,3 +31,12 @@ export const transformMarkersData = (markers: MarkerType[]) => {
       return { ...marker, iconUrl };
     });
   };
+
+export  const getStatusAnalytics = (status:string, markersData: MarkerType[]) => {
+    const filteredMarkers = markersData.filter(marker => marker.status === status);
+    const count = filteredMarkers.length.toString();
+    const percentage = filteredMarkers.length > 0 ? `${(filteredMarkers.length * 100 / markersData.length).toFixed(0)}%` : '0%';
+  
+    return { count, percentage };
+  };
+  

@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+## React.js Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dear InfoTrack team, Kindly refer to the steps below to install the dependencies and the scripts to run, bnuild, test the application.
+
+I have used material UI for almost all of the styled components
+React query was used as an api fetching library
+
+For the table components I have used https://fakestoreapi.com as the baseURL for some table data
+
+For the markers in the map and analytics data in the cards I have used a MOCK_DATA.json file which consists of markers to be displayed in the map.
+
+
+Note: 
+
+1. Kindly rename the .env.example file to .env and enter your google maps api key. 
+2. This code can still be improved with the best practices, more test cases scenarios and modularize some of the components. 
+
+## Installation
+
+To install dependencies you can run:
+
+### `npm install`
+
 
 ## Available Scripts
 
@@ -39,8 +59,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
